@@ -21,7 +21,10 @@
 
 4. Polymorphism - The word polymorphism means having many forms. In simple words, we can define 
    polymorphism as the ability of a message to be displayed in 
-   more than one form.<br><br>
+   more than one form.It is useful when using inheritance. When the child 
+   has the same inherited methods as the parent, 
+   but the child wants to define its own functionality for that specific method, 
+   we can use polymorphism.<br><br>
 </p><br>
 
 <h3><b>SOLID</b> Principles</h3>
