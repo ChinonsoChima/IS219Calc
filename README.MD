@@ -97,8 +97,20 @@ This function just adds two numbers and nothing else.<br><br>
    the program.<br><br>
    
 4. I - Interface Segregation: this principle states that no client should be 
-   forced to depend on methods it does not use.<br><br>
+   forced to depend on methods it does not use. Basically, don't have
+   unnecessary code and make sure every function in your code is useable.<br><br>
    
-5. D - Dependency Inversion Principle:<br>
+5. D - Dependency Inversion Principle: This priciple states that "High-level modules should not depend on low-level modules. Both should depend on abstractions."
+
+If we look at the Calculator class we see one line that is used to specify which operation we are using bewteen two numbers
+
+```
+let calculation = Calculation.Create(a,b,Product);
+```
+Where you see the Product paramter, that can be changed to any other 
+operation that is created in the Operations folder 
+without having to rely on the create function in the Calculation class
+
+This shows how Calculator class does not depend on the Calculation class to figure out what operation to use.<br>
 
 </p>
