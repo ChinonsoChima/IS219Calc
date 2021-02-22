@@ -27,12 +27,78 @@
    we can use polymorphism.<br><br>
 </p><br>
 
-<h3><b>SOLID</b> Principles</h3>
+<h3><b>S.O.L.I.D.</b> Principles</h3>
 <p>
-1. S - Single Responsibility Principle:<br>
-2. O - Open-Closed Principle:<br>
-3. L - Liskov Substitution Principle:<br>
-4. I - Interface Segregation:<br>
+1. S - Single Responsibility Principle: This means that every function 
+you write should have one purpose.
+For example we see that this sum function does one thing.
+
+```
+function Sum (a,b) {
+    return a + b;
+}
+```
+This function just adds two numbers and nothing else.<br><br>
+
+2. O - Open-Closed Principle: This means that your code should
+   be open for extension but closed for modification. In simpler terms, it
+   means that no one should have to go into the file where your code is
+   to modify it in order to use it. For example:
+   ```
+   let iceCreamFlavors = ['chocolate', 'vanilla'];
+   let iceCreamMaker = {
+      makeIceCream(flavor) {
+         if (iceCreamFlavors.indexOf(flavor) > -1) {
+            console.log('Great success. You now have ice cream.');
+         } else {
+            console.log('Epic fail. No ice cream for you.');
+         }
+      },
+      addFlavor(flavor) {
+         iceCreamFlavors.push(flavor);
+      },
+   };
+   export default iceCreamMaker;
+   ```
+   In this code, the ```iceCreamFlavors``` array already has
+    some values inside already. But with the ```addFlavor``` function,
+    you can add more flavors without having to go inside the code
+   and modify it.<br><br>
+   
+3. L - Liskov Substitution Principle: This principle says that a parent
+   class and a child class can be interchanged without breaking your program.
+   For example:
+   ```
+   class TrasportationDevice
+   {
+      String name;
+      String getName() { ... }
+      void setName(String n) { ... }
+      double speed;
+      double getSpeed() { ... }
+      void setSpeed(double d) { ... }
+      
+      Engine engine;
+      Engine getEngine() { ... }
+      void setEngine(Engine e) { ... }
+   
+      void startEngine() { ... }
+   }
+   class Car extends TransportationDevice
+   {
+      @Override
+      void startEngine() { ... }
+   }
+   
+   ```
+   the ```Car``` class overrides the ```startEngine``` method
+   from the ```TransportationDevice``` class with no problem,
+   meaning that you could switch between the classes without breaking
+   the program.<br><br>
+   
+4. I - Interface Segregation: this principle states that no client should be 
+   forced to depend on methods it does not use.<br><br>
+   
 5. D - Dependency Inversion Principle:<br>
 
 </p>
