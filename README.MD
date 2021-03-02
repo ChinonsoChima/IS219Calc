@@ -3,8 +3,32 @@
 [![Build Status](https://travis-ci.org/ChinonsoChima/IS219CalcNew-master.svg?branch=master)](https://travis-ci.org/ChinonsoChima/IS219CalcNew-master)
 <br>
 <br>
+<h3>Design Patterns</h3><br>
+<h4>
+Creational - Builder: This creational design pattern allows programmers to build 
+a complex object using simpler objects and using a step-by-step 
+approach. This helps produce different types and representations 
+of an object using the same construction code.
 
-<h3>The 4 Principles of OOP (Object-Oriented Programming)</h3><br>
+The Builder pattern allows a collection of 
+builders to do its own separate operation to build to 
+the overall object. For example, in our calculator app, we had 
+Calculator.js, Calculation.js, and the other operational files
+(Addition.js, Subtraction.js, etc). Here, the operational files 
+would be the builders for the Calculator app. It is divided into 
+different functionalities and products that will make up the 
+calculator app to deliver the proper functions that the client 
+needs. And often in a Builder pattern, it is recommended that 
+there be a Director object that controls/manages what kinds of 
+Builders to call. In our app, we can view the Calculation.js file 
+as our manager as it calls what kinds of operations to run by 
+passing the type of operation as one of its variables.
+</h4><br>
+
+<h4>
+
+</h4>
+<br><br><h3>The 4 Principles of OOP (Object-Oriented Programming)</h3><br>
 <p>
 
 1. Encapsulation - defined as the wrapping up of data under a single unit. It is the 
