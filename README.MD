@@ -22,7 +22,7 @@ there be a Director object that controls/manages what kinds of
 Builders to call. In our app, we can view the Calculation.js file 
 as our manager as it calls what kinds of operations to run by 
 passing the type of operation as one of its variables.
-<br>
+<br><br>
 
 Structural - Decorator: allows a user to add new functionality to an 
 existing object without altering its structure. This type of design
