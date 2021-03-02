@@ -30,9 +30,13 @@ pattern comes under structural pattern as this pattern acts
 as a wrapper to existing class. This pattern creates a decorator class which 
 wraps the original class and provides additional 
 functionality keeping class methods signature intact.
+<br><br>
 
-
-
+Behavioral - Chain of Responsibility: is a behavioral design 
+pattern that lets you pass requests along a chain of handlers. 
+Upon receiving a request, each handler decides either to process 
+the request or to pass it to the next handler in the chain.
+<br><br>
 
 
 </h4>
