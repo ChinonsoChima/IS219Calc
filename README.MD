@@ -3,14 +3,13 @@
 [![Build Status](https://travis-ci.org/ChinonsoChima/IS219CalcNew-master.svg?branch=master)](https://travis-ci.org/ChinonsoChima/IS219CalcNew-master)
 <br>
 <br>
-<h3>Design Patterns</h3><br>
+<h3>Design Patterns</h3>
+
 <h4>
 Creational - Builder: This creational design pattern allows programmers to build 
 a complex object using simpler objects and using a step-by-step 
 approach. This helps produce different types and representations 
-of an object using the same construction code.
-
-The Builder pattern allows a collection of 
+of an object using the same construction code. The Builder pattern allows a collection of 
 builders to do its own separate operation to build to 
 the overall object. For example, in our calculator app, we had 
 Calculator.js, Calculation.js, and the other operational files
@@ -23,9 +22,18 @@ there be a Director object that controls/manages what kinds of
 Builders to call. In our app, we can view the Calculation.js file 
 as our manager as it calls what kinds of operations to run by 
 passing the type of operation as one of its variables.
-</h4><br>
+<br>
 
-<h4>
+Structural - Decorator: allows a user to add new functionality to an 
+existing object without altering its structure. This type of design
+pattern comes under structural pattern as this pattern acts 
+as a wrapper to existing class. This pattern creates a decorator class which 
+wraps the original class and provides additional 
+functionality keeping class methods signature intact.
+
+
+
+
 
 </h4>
 <br><br><h3>The 4 Principles of OOP (Object-Oriented Programming)</h3><br>
